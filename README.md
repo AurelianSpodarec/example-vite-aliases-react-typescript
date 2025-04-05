@@ -1,6 +1,6 @@
 # Automatic Vite Path Aliases with React and TypeScript
 
-This repository demonstrates how to set up automatic path aliases in Vite using React with TypeScript.
+This repository demonstrates how to set-up automatic path aliases just like Next.js in Vite using React with TypeScript.
 
 Going from this:
 
@@ -14,7 +14,9 @@ To this:
 import Button from "@/components/Button";
 ```
 
-You can read the full article here: https://www.aurelianspodarec.co.uk/blog/how-to-setup-aliases-in-vite-with-react-and-typescript
+If you need custom aliases, check out the [custom-aliases branch](https://github.com/AurelianSpodarec/example-vite-aliases-react-typescript/tree/custom-aliases)
+
+Additionally, you can read the full article detailing this setup: https://www.aurelianspodarec.co.uk/blog/how-to-setup-aliases-in-vite-with-react-and-typescript
 
 ## Getting Started
 
