@@ -1,54 +1,48 @@
-# React + TypeScript + Vite
+# Vite Path Aliases with React and TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository demonstrates how to set up automatic path aliases in Vite using React and TypeScript.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Going from this:
 
 ```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+import Button from "./../../../../../../components/Button";
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+To this:
 
 ```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+import Button from "@components/Button";
 ```
+
+You can read the full article here: https://www.aurelianspodarec.co.uk/blog/how-to-setup-aliases-in-vite-with-react-and-typescript
+
+## Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/AurelianSpodarec/example-vite-aliases-react-typescript.git
+cd example-vite-aliases-react-typescript
+```
+
+Install NPM dependencies:
+
+```bash
+npm install
+```
+
+To start the development server, run:
+
+```bash
+npm run dev
+```
+
+## Contributions
+
+Feel free to open an issue or create a pull request. I'm always happy to add notes to the article and/or code.  
+
+You can contact me on Twitter/X to direct message if needed.
+
+## License
+
+This project is licensed under the MIT License. Feel free to use the code freely!
