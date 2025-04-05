@@ -1,6 +1,6 @@
-import Button from '@atoms/Button'
-import Section from '@components/Section'
-import reactLogo from '@assets/react.svg'
+import Button from '#atoms/Button'
+import Section from '#components/Section'
+import reactLogo from '#assets/react.svg'
 
 function App() {
   return (

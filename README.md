@@ -1,6 +1,6 @@
-# Vite Path Aliases with React and TypeScript
+# Custom Vite Path Aliases with React and TypeScript
 
-This repository demonstrates how to set up automatic path aliases in Vite using React and TypeScript.
+This repository demonstrates how to set up custom path aliases in Vite using React and TypeScript.
 
 Going from this:
 
@@ -11,12 +11,20 @@ import Button from "./../../../../../../components/Button";
 To this:
 
 ```js
-import Button from "@components/Button";
+import Button from "#components/Button";
 ```
 
-I'll be showing you a custom way to set up each alias manually, and an automatic way on how Next.js does it. To see how Next.js does it, change the branch to [nextjs-path-aliases-in-vite](https://github.com/AurelianSpodarec/example-vite-aliases-react-typescript/tree/nextjs-path-aliases-in-vite)
+or
 
-You can read the full article here: https://www.aurelianspodarec.co.uk/blog/how-to-setup-aliases-in-vite-with-react-and-typescript
+```js
+import Button from "@atoms/Button";
+```
+
+You can customize the alias structure however you wish.
+
+For a complete implementation with automatic importing, check out the [main branch](https://github.com/AurelianSpodarec/example-vite-aliases-react-typescript)
+
+Additionally, you can read the full article detailing this setup: https://www.aurelianspodarec.co.uk/blog/how-to-setup-aliases-in-vite-with-react-and-typescript
 
 ## Getting Started
 
@@ -25,6 +33,7 @@ Clone the repository:
 ```bash
 git clone https://github.com/AurelianSpodarec/example-vite-aliases-react-typescript.git
 cd example-vite-aliases-react-typescript
+git checkout custom-aliases
 ```
 
 Install NPM dependencies:

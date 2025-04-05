@@ -7,10 +7,10 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      "@components": path.resolve('./src/components'),
-      "@atoms": path.resolve('./src/components/atoms'),
-      "@assets": path.resolve('./src/assets'),
-      "@": path.resolve("./src"),
+      "#components": path.resolve('./src/components'),
+      "#atoms": path.resolve('./src/components/atoms'),
+      "#assets": path.resolve('./src/assets'),
+      "#": path.resolve("./src"),
     },
   },
 })

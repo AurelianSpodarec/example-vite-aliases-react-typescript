@@ -25,11 +25,12 @@
     /* Aliases */
     "baseUrl": ".",
     "paths": {
-      "@atoms/*": ["src/components/atoms/*"],
-      "@components/*": ["src/components/*"],
-      "@assets/*": ["src/assets/*"],
-      "@": ["./src/*"]
+      "#atoms/*": ["src/components/atoms/*"],
+      "#components/*": ["src/components/*"],
+      "#assets/*": ["src/assets/*"],
+      "#/*": ["src/*"]
     }
   },
-  "include": ["src"]
+  "include": ["src", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }
