@@ -5,7 +5,7 @@ import reactLogo from './assets/react.svg'
 function App() {
   return (
     <Section>
-      <img src={reactLogo} className="logo react" alt="React logo" />
+      <img src={reactLogo} alt="React logo" />
       <Button>Click</Button>
     </Section>
   )
