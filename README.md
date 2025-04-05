@@ -14,6 +14,8 @@ To this:
 import Button from "@components/Button";
 ```
 
+I'll be showing you a custom way to set up each alias manually, and an automatic way on how Next.js does it. To see how Next.js does it, change the branch to [nextjs-path-aliases-in-vite](https://github.com/AurelianSpodarec/example-vite-aliases-react-typescript/tree/nextjs-path-aliases-in-vite)
+
 You can read the full article here: https://www.aurelianspodarec.co.uk/blog/how-to-setup-aliases-in-vite-with-react-and-typescript
 
 ## Getting Started
